@@ -1,0 +1,244 @@
+
+
+        /* New code */
+        .fondo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background: linear-gradient(to bottom, #000000, #0cca4b);
+            background-image: url('https://wallpaper.forfun.com/fetch/2e/2edf9f79c34072103993dcaddf8f49f8.jpeg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            margin: 0;
+            height: 100vh;
+            position: relative;
+        }
+    
+           
+    
+            .container {
+                max-width: 400px;
+                padding: 20px;
+                background-color: rgba(0,0,0, .2);
+                backdrop-filter: blur(10px);
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(0, 255, 34, 0.5);
+            }
+    
+            .inicio {
+                text-align: center;
+                font-weight: bold;
+                margin-bottom: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: #fff;
+            }
+                
+                .input-group i {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    
+                }
+                .input-group input {
+                    padding-left: 5px;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+               
+                
+            .form-group {
+                margin-bottom: 20px;
+                display: grid;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+    
+            .form-group label {
+                display: flex;
+                font-weight: bold;
+                margin-bottom: 5px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: larger;
+                color: #fff;
+            }
+    
+            .form-group input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #0cca4b;
+                border-radius: 5px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+    
+            .form-group button {
+                width: 100%;
+                padding: 10px;
+                background-color: #4CAF50;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                box-shadow: 0px 0px 5px rgb(0, 0, 0);
+                background: linear-gradient(to right, #016119, #00ff55); border: #000000; color: white; padding: 10px 20px; text-align: center; text-decoration: wavy; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;
+            }
+    
+            .form-group button:hover {
+                background-color: #45a049;
+            }
+            
+           
+            .fondoM {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: url("planeta-verde_3840x2160_xtrafondos.com.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                margin: 0;
+                height: 100vh;
+                position: relative;
+            }
+            
+            .inicioM {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                font-weight: bold;
+                color: #00ff55;
+            }
+            
+            .containerM {
+                max-width: 400px;
+                padding: 20px;
+                background-color: rgba(0, 0, 0, 0.2);
+                backdrop-filter: blur(10px);
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(0, 255, 34, 0.5);
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-style: italic;
+                opacity: 0;
+                transition: opacity 0.5s ease;
+                pointer-events: none; /* Evita que los eventos del ratón pasen a través del elemento cuando está oculto */
+            }
+            
+            .containerM.show {
+                opacity: 1; /* Hace visible el menú cuando tiene la clase 'show' */
+                pointer-events: all; /* Permite que los eventos del ratón se activen en el menú visible */
+            }
+            
+           
+    
+            ul {
+                list-style:none; 
+                padding: 10px;
+                margin: 10px;
+                width: 100%;
+            }
+            
+            .menu-option {
+                margin-bottom: 10px;
+                padding: 15px;
+                background: linear-gradient(to right, #048f27, #000000);
+                color: white;
+                border: none;
+                border-radius: 5px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 18px;
+                transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+                display: block;
+            }
+            
+            .menu-option:hover {
+                background-color: #45a049;
+                transform: scale(1.05);
+                box-shadow: 0 0px 12px rgba(30, 255, 0, 0.5);
+                color: white;
+            }
+    
+            .fondo-animado {
+                background: linear-gradient(270deg, #000000, #016119);
+                background-size: 200% 200%;
+                animation: moverFondo 10s infinite alternate;
+                height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            @keyframes moverFondo {
+                0% { background-position: 0% 50%; }
+                100% { background-position: 100% 50%; }
+            }
+            
+            .mantenimiento-container {
+                
+                padding: 30px;
+                background-color: rgba(0, 0, 0, 0.7);
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(0, 255, 34, 0.5);
+                color: white;
+                height: 90vh;
+                width: 25%; /* Aumenta el ancho para abarcar más pantalla */
+                max-width: 1200px; /* Define un ancho máximo */
+                overflow-y: scroll; /* Permite desplazamiento */
+                scrollbar-width: none; /* Oculta la barra en Firefox */
+                -ms-overflow-style: none; /* Oculta la barra en IE y Edge */
+            }
+            
+            .mantenimiento-container::-webkit-scrollbar {
+                display: none; /* Oculta la barra en Chrome, Safari, y Opera */
+            }
+            
+            .nav-tabs > li > a {
+                color: white;
+                background-color: transparent;
+                border: none;
+            }
+            
+            .nav-tabs > li.active > a {
+                background-color: #0cca4b;
+                color: white;
+            }
+            
+            .form-group {
+                margin-bottom: 15px;
+            }
+            
+            .form-control {
+                background-color: rgba(255, 255, 255, 0.1);
+                border: 1px solid #0cca4b;
+                color: white;
+            }
+            
+            textarea.form-control {
+                height: 60px;
+            }
+            
+            .botones .btn {
+                margin-right: 10px;
+            }
+            
+            .btn-primary {
+                background-color: #007bff;
+                border: none;
+            }
+            
+            .btn-success {
+                background-color: #28a745;
+                border: none;
+            }
+            
+            .btn-info {
+                background-color: #17a2b8;
+                border: none;
+            }
+            
+            .btn-danger {
+                background-color: #dc3545;
+                border: none;
+            }
